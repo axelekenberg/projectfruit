@@ -1,8 +1,8 @@
 # Project-Fruit
 
-![GitHub last commit](https://img.shields.io/github/last-commit/axelekenberg/Project-Fruit)
-![GitHub repo size](https://img.shields.io/github/repo-size/axelekenberg/Project-Fruit)
-![GitHub contributors](https://img.shields.io/github/contributors/axelekenberg/Project-Fruit)
+![GitHub last commit](https://img.shields.io/github/last-commit/axelekenberg/projectfruit)
+![GitHub repo size](https://img.shields.io/github/repo-size/axelekenberg/projectfruit)
+![GitHub contributors](https://img.shields.io/github/contributors/axelekenberg/projectfruit)
 
 Code for a smart display showing total CO2 emissions for fruits.
 
@@ -31,6 +31,6 @@ If you want to contact me you can reach me on Twitter @alltinomit.
 
 ## License
 
-![Code License](https://img.shields.io/github/license/axelekenberg/Project-Fruit)
+![Code License](https://img.shields.io/github/license/axelekenberg/projectfruit)
 
 -->
