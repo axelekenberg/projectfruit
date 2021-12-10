@@ -23,9 +23,6 @@ body {
     grid-area: graph;
     
     width: 100%;
-    
-
-
 }
 
 #path589 {
@@ -38,12 +35,17 @@ body {
 
 }
 
-.graph img {
-    width: 150%;
-    margin-left: calc(-150% /2 - 1.3%);
-    margin-top: 10vh;
+.graph .container{
+    height: 100%;
+    aspect-ratio: 1;
+}
 
-   
+.graph img {
+    position: relative;
+    left: -50%;
+    height: 100%;
+    max-width: 200%;
+    aspect-ratio: 1;   
 
     transform: rotate(180deg);
     animation: rotate 3s linear forwards;
