@@ -1,0 +1,97 @@
+body {
+    background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-areas: 
+            "graph circles"
+            "info logo";
+    width: 100vw;
+    height: 100vh;
+}
+
+:root {
+    --main-bg-color: #000;
+    --secondary-bg-color: rgb(58, 57, 57);
+    --circle1-bg-color: blue;
+    --circle2-bg-color: red;
+    --circle3-bg-color: orange;
+    --circle4-bg-color: yellow;
+    --circle5-bg-color: green;
+    
+}
+
+.graph {
+    grid-area: graph;
+    transform: rotate(180deg);
+    animation: rotate 3s linear forwards;
+    animation-delay: 3s;
+    right: 560px;
+    position: absolute;
+    
+
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.circles {
+    grid-area: circles;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.circles li{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.circles li:nth-of-type(1) {
+    background-color: var(--circle1-bg-color);
+}
+
+.circles li:nth-of-type(2) {
+    background-color: var(--circle2-bg-color);
+    
+}
+
+.circles li:nth-of-type(3) {
+    background-color: var(--circle3-bg-color);
+}
+
+.circles li:nth-of-type(4) {
+    background-color: var(--circle4-bg-color);
+}
+
+.circles li:nth-of-type(5) {
+    background-color: var(--circle5-bg-color);
+}
+
+
+.info {
+    grid-area: info;
+
+
+}
+
+.info ul{
+    background-color: var(--secondary-bg-color);
+    list-style: none;
+
+
+}
+
+.logo {
+    grid-area: logo;
+
+}
