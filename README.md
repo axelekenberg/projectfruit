@@ -9,10 +9,10 @@ Code for a smart display showing total CO2 emissions for fruits.
 ## Contributing to this project
 To contribute to this project, follow these steps:
 
-1. Fork this repository.
+1. Fork this repository and clone your fork.
 2. Create a branch: `git checkout -b <branch_name>`.
-3. Make your changes and commit them: `git commit -m '<commit_message>'`
-4. Push to the original branch: `git push origin <project_name>/<location>`
+3. Make your changes, add and commit them: `git add *` `git commit -m '<commit_message>'`
+4. Push to the original branch: `git push origin axelekenberg/projectfruit`
 5. Create the pull request.
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
