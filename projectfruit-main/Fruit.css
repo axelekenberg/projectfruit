@@ -6,6 +6,7 @@ body {
             "info logo";
     max-width: 100vw;
     max-height: 100vh;
+    margin: 0;
 }
 
 :root {
@@ -26,7 +27,6 @@ body {
 }
 
 
-
 .container {
     height: 75vh;
 
@@ -37,7 +37,7 @@ body {
     aspect-ratio: 1;
 }
 
-.graph img {
+.graph svg {
     position: relative;
     left: -50%;
     height: 100%;
@@ -45,31 +45,28 @@ body {
     aspect-ratio: 1;   
 
     transform: rotate(180deg);
-    animation: rotate 3s linear forwards;
     animation-delay: 3s;
 
 
 }
+#g18  {
+    animation: rotate1 5s linear forwards;
+    transform-origin: 50.2% 64.1%;
 
-@keyframes fade {
-    0% {
-        opacity: 0; 
-    }
-    
-    100% {
-        opacity: 1;
-    }
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(-180deg);
-    }
+#g1016 {
+    animation: rotate2 5s linear forwards;
+    transform-origin: 50.2% 64.1%;
 
-    100% {
-        transform: rotate(-360deg);
-    }
 }
+
+#g1203 {
+    animation: rotate3 5s linear forwards;
+    transform-origin: 50.2% 64.1%;
+}
+
+
 
 .circles {
     grid-area: circles;
@@ -79,9 +76,8 @@ body {
     
 }
 
-
-
 .circles li{
+    
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -93,18 +89,12 @@ body {
     background-color: var(--circle1-bg-color);
     width: 16vw;
     height: 16vw;
-    opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 4s;
 }
 
 .circles li:nth-of-type(2) {
     background-color: var(--circle2-bg-color);
     width: 14vw;
     height: 14vw;
-    opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 5s;
 }
 
 .circles li:nth-of-type(3) {
@@ -112,27 +102,18 @@ body {
     width: 12vw;
     height: 12vw;
     margin-right: 20vw;
-    opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 6s;
 }
 
 .circles li:nth-of-type(4) {
     background-color: var(--circle4-bg-color);
     width: 10vw;
     height: 10vw;
-    opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 7s;
 }
 
 .circles li:nth-of-type(5) {
     background-color: var(--circle5-bg-color);
     width: 8vw;
     height: 8vw;
-    opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 8s;
 }
 
 
@@ -143,20 +124,9 @@ body {
 
 }
 
-
-
 .info ul{
     background-color: var(--secondary-bg-color);
     list-style: none;
-    border-radius: 0 20px 20px 0;
-    width: 30vw;
-    padding: 2px;
-    font-size: 1.5vw;
-    padding-left: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 1s;
 
 
 }
