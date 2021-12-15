@@ -28,10 +28,7 @@ body {
 
 }
 
-#path589 {
-    
 
-}
 
 .container {
     height: 75vh;
@@ -51,6 +48,17 @@ body {
 
 
 }
+
+@keyframes fade {
+    0% {
+        opacity: 0; 
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(-180deg);
@@ -69,8 +77,9 @@ body {
     
 }
 
+
+
 .circles li{
-    
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -82,12 +91,18 @@ body {
     background-color: var(--circle1-bg-color);
     width: 16vw;
     height: 16vw;
+    opacity: 0;
+    animation: fade 3s linear forwards;
+    animation-delay: 4s;
 }
 
 .circles li:nth-of-type(2) {
     background-color: var(--circle2-bg-color);
     width: 14vw;
     height: 14vw;
+    opacity: 0;
+    animation: fade 3s linear forwards;
+    animation-delay: 5s;
 }
 
 .circles li:nth-of-type(3) {
@@ -95,18 +110,27 @@ body {
     width: 12vw;
     height: 12vw;
     margin-right: 20vw;
+    opacity: 0;
+    animation: fade 3s linear forwards;
+    animation-delay: 6s;
 }
 
 .circles li:nth-of-type(4) {
     background-color: var(--circle4-bg-color);
     width: 10vw;
     height: 10vw;
+    opacity: 0;
+    animation: fade 3s linear forwards;
+    animation-delay: 7s;
 }
 
 .circles li:nth-of-type(5) {
     background-color: var(--circle5-bg-color);
     width: 8vw;
     height: 8vw;
+    opacity: 0;
+    animation: fade 3s linear forwards;
+    animation-delay: 8s;
 }
 
 
@@ -117,9 +141,20 @@ body {
 
 }
 
+
+
 .info ul{
     background-color: var(--secondary-bg-color);
     list-style: none;
+    border-radius: 0 20px 20px 0;
+    width: 30vw;
+    padding: 2px;
+    font-size: 1.5vw;
+    padding-left: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    animation: fade 3s linear forwards;
+    animation-delay: 1s;
 
 
 }
