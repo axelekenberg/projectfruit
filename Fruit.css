@@ -12,11 +12,11 @@ body {
 :root {
     --main-bg-color: rgb(20, 18, 18);
     --secondary-bg-color: rgb(58, 57, 57);
-    --circle1-bg-color: blue;
-    --circle2-bg-color: red;
-    --circle3-bg-color: orange;
-    --circle4-bg-color: yellow;
-    --circle5-bg-color: green;
+    --circle1-bg-color: #203354;
+    --circle2-bg-color: #203354;
+    --circle3-bg-color: #203354;
+    --circle4-bg-color: #203354;
+    --circle5-bg-color: #203354;
     
 }
 
@@ -40,59 +40,76 @@ body {
     height: 100%;
     width: 200%;
     aspect-ratio: 1;
-
+    margin-bottom: 10%;
     transform: rotate(180deg) translateX(50%);
-    animation-delay: 3s;
 
 }
 .graph ul{
     list-style: none;
-    margin-top: -1em;
+    margin-top: -11em;
     padding: 0;
     margin-left: 1em;
+
 }
-.graph ul li{
+.graph ul li:nth-of-type(1){
     color: white;
     font-size: 1.5em;
+    padding-bottom: 1em;
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 6s;
+    color: #ffff00;
+
+}
+
+.graph ul li:nth-of-type(2){
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 7s;
+    color:#025b9c;
+
+}
+
+.graph ul li:nth-of-type(3){
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 8s;
+    color: #003ca3;
+
 }
 
 #g18  {
-    animation: rotate1 5s linear forwards;
+    animation: rotate1 3s linear forwards;
+    animation-delay: 6s;
     transform-origin: 50.2% 64.1%;
 
 }
 
 #g1016 {
-    animation: rotate2 5s linear forwards;
+    animation: rotate2 3s linear forwards;
+    animation-delay: 7s;
     transform-origin: 50.2% 64.1%;
+    
 
 }
 
 #g1203 {
-    animation: rotate3 5s linear forwards;
+    animation: rotate3 3s linear forwards;
+    animation-delay: 8s;
     transform-origin: 50.2% 64.1%;
 }
+
+
 
 #g3533 {
     display: none;
 }
-
-@keyframes fade {
-    0% {
-        opacity: 0; 
-    }
-    
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(-180deg);
-    }
-
-{
 
 .circles ul {
     display: flex;
@@ -112,11 +129,7 @@ body {
     
 }
 
-
-
 .circles li{
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
     margin-bottom: 3vh;
     aspect-ratio: 1;
@@ -124,50 +137,67 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    font-size: 1.5em;
     
 }
 
 .circles li:nth-of-type(1) {
     background-color: var(--circle1-bg-color);
-    height: 16vw;
+    height: 22vw;
+    box-shadow: 4px 4px 40px rgb(85, 85, 85);
     opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 4s;
+    animation: fadein 3s forwards linear;
+    animation-delay: 10s;
+
 }
-    width: 14vw;
-    height: 14vw;
+
+.circles li:nth-of-type(2) {
+    background-color: var(--circle2-bg-color);
+    box-shadow: 4px 4px 40px rgb(85, 85, 85);
     opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 5s;
+    animation: fadein 3s forwards linear;
+    animation-delay: 11s;
+    
 }
 
 .circles li:nth-of-type(3) {
     background-color: var(--circle3-bg-color);
-    width: 12vw;
-    height: 12vw;
-    margin-right: 20vw;
+    box-shadow: 4px 4px 40px rgb(85, 85, 85);
     opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 6s;
+    animation: fadein 3s forwards linear;
+    animation-delay: 12s;
+
+
 }
 
 .circles li:nth-of-type(4) {
     background-color: var(--circle4-bg-color);
-    width: 10vw;
-    height: 10vw;
+    box-shadow: 4px 4px 40px rgb(85, 85, 85);
     opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 7s;
+    animation: fadein 3s forwards linear;
+    animation-delay: 13s;
+
+    
 }
 
 .circles li:nth-of-type(5) {
     background-color: var(--circle5-bg-color);
-    width: 8vw;
-    height: 8vw;
+    box-shadow: 4px 4px 40px rgb(85, 85, 85);
     opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 8s;
+    animation: fadein 3s forwards linear;
+    animation-delay: 14s;
+
+}
+
+.text {
+    color: white;
+    position: relative;
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 9s;
+    display: flex;
+    justify-content: center;
+
 }
 
 
@@ -176,20 +206,22 @@ body {
 
 }
 
-
-
 .info ul{
     background-color: var(--secondary-bg-color);
     list-style: none;
-    border-radius: 0 20px 20px 0;
-    width: 30vw;
-    padding: 2px;
-    font-size: 1.5vw;
-    padding-left: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    opacity: 0;
-    animation: fade 3s linear forwards;
-    animation-delay: 1s;
+    margin-top: 20%;
+    margin-right: 50%;
+    margin-left: 0;
+    padding: 0;
+    width: 60%;
+    color: white;
+    border-radius: 0 2em 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slide-in 5s forwards;
+   
 
 
 }
