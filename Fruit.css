@@ -12,11 +12,9 @@ body {
 :root {
     --main-bg-color: rgb(20, 18, 18);
     --secondary-bg-color: rgb(58, 57, 57);
-    --circle1-bg-color: #203354;
-    --circle2-bg-color: #203354;
-    --circle3-bg-color: #203354;
-    --circle4-bg-color: #203354;
-    --circle5-bg-color: #203354;
+    --circle-bg-color: radial-gradient(circle at 100px 100px, #5cabff, #000);
+    --maincircle-bg-color: radial-gradient(circle at 100px 100px, #61e440, #000);
+    
     
 }
 
@@ -33,7 +31,7 @@ body {
 }
 
 .graph .container{
-    height: 100%;
+    height: 80%;
 }
 
 .graph svg {
@@ -46,14 +44,14 @@ body {
 }
 .graph ul{
     list-style: none;
-    margin-top: -11em;
+    margin-top: -8em;
     padding: 0;
     margin-left: 1em;
 
 }
 .graph ul li:nth-of-type(1){
     color: white;
-    font-size: 1.5em;
+    font-size: 2.5em;
     padding-bottom: 1em;
     opacity: 0;
     animation: fadein 3s forwards linear;
@@ -64,22 +62,22 @@ body {
 
 .graph ul li:nth-of-type(2){
     color: white;
-    font-size: 1.5em;
+    font-size: 2.5em;
     padding-bottom: 1em;
     opacity: 0;
     animation: fadein 3s forwards linear;
-    animation-delay: 7s;
+    animation-delay: 8s;
     color:#025b9c;
 
 }
 
 .graph ul li:nth-of-type(3){
     color: white;
-    font-size: 1.5em;
+    font-size: 2.5em;
     padding-bottom: 1em;
     opacity: 0;
     animation: fadein 3s forwards linear;
-    animation-delay: 8s;
+    animation-delay: 10s;
     color: #003ca3;
 
 }
@@ -93,7 +91,7 @@ body {
 
 #g1016 {
     animation: rotate2 3s linear forwards;
-    animation-delay: 7s;
+    animation-delay: 8s;
     transform-origin: 50.2% 64.1%;
     
 
@@ -101,7 +99,7 @@ body {
 
 #g1203 {
     animation: rotate3 3s linear forwards;
-    animation-delay: 8s;
+    animation-delay: 10s;
     transform-origin: 50.2% 64.1%;
 }
 
@@ -142,59 +140,60 @@ body {
 }
 
 .circles li:nth-of-type(1) {
-    background-color: var(--circle1-bg-color);
+    background: black;
+    background: var(--circle-bg-color);   
     height: 22vw;
-    box-shadow: 4px 4px 40px rgb(85, 85, 85);
     opacity: 0;
     animation: fadein 3s forwards linear;
-    animation-delay: 10s;
+    animation-delay: 15s;
 
 }
 
 .circles li:nth-of-type(2) {
-    background-color: var(--circle2-bg-color);
-    box-shadow: 4px 4px 40px rgb(85, 85, 85);
+    background: black;
+    background: var(--circle-bg-color);
     opacity: 0;
     animation: fadein 3s forwards linear;
-    animation-delay: 11s;
+    animation-delay: 16s;
     
 }
 
 .circles li:nth-of-type(3) {
-    background-color: var(--circle3-bg-color);
-    box-shadow: 4px 4px 40px rgb(85, 85, 85);
+    background: black;
+    background: var(--maincircle-bg-color);
     opacity: 0;
     animation: fadein 3s forwards linear;
-    animation-delay: 12s;
+    animation-delay: 17s;
 
 
 }
 
 .circles li:nth-of-type(4) {
-    background-color: var(--circle4-bg-color);
-    box-shadow: 4px 4px 40px rgb(85, 85, 85);
+    background: black;
+    background: var(--circle-bg-color);
     opacity: 0;
     animation: fadein 3s forwards linear;
-    animation-delay: 13s;
+    animation-delay: 18s;
 
     
 }
 
 .circles li:nth-of-type(5) {
-    background-color: var(--circle5-bg-color);
-    box-shadow: 4px 4px 40px rgb(85, 85, 85);
+    background: black;
+    background: var(--circle-bg-color);
     opacity: 0;
     animation: fadein 3s forwards linear;
-    animation-delay: 14s;
+    animation-delay: 19s;
 
 }
 
 .text {
     color: white;
     position: relative;
+    font-size: 2em;
     opacity: 0;
     animation: fadein 3s forwards linear;
-    animation-delay: 9s;
+    animation-delay: 14s;
     display: flex;
     justify-content: center;
 
@@ -209,7 +208,7 @@ body {
 .info ul{
     background-color: var(--secondary-bg-color);
     list-style: none;
-    margin-top: 20%;
+    margin-top: 0%;
     margin-right: 50%;
     margin-left: 0;
     padding: 0;
@@ -220,7 +219,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: slide-in 5s forwards;
+    animation: slide-in 5s forwards; 
    
 
 
