@@ -13,7 +13,7 @@ body {
     --main-bg-color: rgb(20, 18, 18);
     --secondary-bg-color: rgb(58, 57, 57);
     --circle-bg-color: radial-gradient(circle at 100px 100px, #5cabff, #000);
-    --maincircle-bg-color: radial-gradient(circle at 100px 100px, #61e440, #000);
+    --maincircle-bg-color: radial-gradient(circle at 100px 100px, #00cc99, #000);
     
     
 }
@@ -44,54 +44,49 @@ body {
 }
 .graph ul{
     list-style: none;
-    margin-top: -8em;
+    margin-top: -6em;
     padding: 0;
     margin-left: 1em;
 
 }
-.graph ul li:nth-of-type(1){
+
+.graph ul li{
     color: white;
-    font-size: 2.5em;
+    font-size: 1.5em;
     padding-bottom: 1em;
     opacity: 0;
     animation: fadein 3s forwards linear;
+}
+.graph ul li:nth-of-type(1){
     animation-delay: 6s;
-    color: #ffff00;
+    color: #ba2c73;
 
 }
 
 .graph ul li:nth-of-type(2){
     color: white;
-    font-size: 2.5em;
-    padding-bottom: 1em;
-    opacity: 0;
-    animation: fadein 3s forwards linear;
     animation-delay: 8s;
-    color:#025b9c;
+    color:#5aa9e6;
 
 }
 
 .graph ul li:nth-of-type(3){
     color: white;
-    font-size: 2.5em;
-    padding-bottom: 1em;
-    opacity: 0;
-    animation: fadein 3s forwards linear;
     animation-delay: 10s;
-    color: #003ca3;
+    color: #072ac8;
 
 }
 
 #g18  {
     animation: rotate1 3s linear forwards;
-    animation-delay: 6s;
+    animation-delay: 4s;
     transform-origin: 50.2% 64.1%;
 
 }
 
 #g1016 {
     animation: rotate2 3s linear forwards;
-    animation-delay: 8s;
+    animation-delay: 7s;
     transform-origin: 50.2% 64.1%;
     
 
@@ -130,7 +125,6 @@ body {
 .circles li{
     border-radius: 50%;
     margin-bottom: 3vh;
-    aspect-ratio: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,8 +135,7 @@ body {
 
 .circles li:nth-of-type(1) {
     background: black;
-    background: var(--circle-bg-color);   
-    height: 22vw;
+    background: var(--circle-bg-color);  
     opacity: 0;
     animation: fadein 3s forwards linear;
     animation-delay: 15s;
@@ -190,7 +183,7 @@ body {
 .text {
     color: white;
     position: relative;
-    font-size: 2em;
+    font-size: 1.3em;
     opacity: 0;
     animation: fadein 3s forwards linear;
     animation-delay: 14s;
@@ -208,8 +201,9 @@ body {
 .info ul{
     background-color: var(--secondary-bg-color);
     list-style: none;
-    margin-top: 0%;
+    margin-top: -20%;
     margin-right: 50%;
+    font-size: 0.75em;
     margin-left: 0;
     padding: 0;
     width: 60%;
@@ -219,7 +213,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: slide-in 5s forwards; 
+    animation: slide-in 2s forwards; 
    
 
 
