@@ -1,0 +1,225 @@
+body {
+    background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-areas: 
+            "graph circles"
+            "info logo";
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+}
+
+:root {
+    --main-bg-color: rgb(20, 18, 18);
+    --secondary-bg-color: rgb(58, 57, 57);
+    --circle-bg-color: radial-gradient(circle at 100px 100px, #5cabff, #000);
+    --maincircle-bg-color: radial-gradient(circle at 100px 100px, #00cc99, #000);
+    
+    
+}
+
+.graph {
+    grid-area: graph;
+    
+    width: 50vw;
+}
+
+
+.container {
+    height: 75vh;
+
+}
+
+.graph .container{
+    height: 80%;
+}
+
+.graph svg {
+    height: 100%;
+    width: 200%;
+    aspect-ratio: 1;
+    margin-bottom: 10%;
+    transform: rotate(180deg) translateX(50%);
+
+}
+.graph ul{
+    list-style: none;
+    margin-top: -6em;
+    padding: 0;
+    margin-left: 1em;
+
+}
+
+.graph ul li{
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+}
+.graph ul li:nth-of-type(1){
+    animation-delay: 6s;
+    color: #ba2c73;
+
+}
+
+.graph ul li:nth-of-type(2){
+    color: white;
+    animation-delay: 8s;
+    color:#5aa9e6;
+
+}
+
+.graph ul li:nth-of-type(3){
+    color: white;
+    animation-delay: 10s;
+    color: #072ac8;
+
+}
+
+#g18  {
+    animation: rotate1 3s linear forwards;
+    animation-delay: 4s;
+    transform-origin: 50.2% 64.1%;
+
+}
+
+#g1016 {
+    animation: rotate2 3s linear forwards;
+    animation-delay: 7s;
+    transform-origin: 50.2% 64.1%;
+    
+
+}
+
+#g1203 {
+    animation: rotate3 3s linear forwards;
+    animation-delay: 10s;
+    transform-origin: 50.2% 64.1%;
+}
+
+
+
+#g3533 {
+    display: none;
+}
+
+.circles ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circles {
+    grid-area: circles;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    width: 50vw;
+    
+}
+
+.circles li{
+    border-radius: 50%;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    
+}
+
+.circles li:nth-of-type(1) {
+    background: black;
+    background: var(--circle-bg-color);  
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 15s;
+
+}
+
+.circles li:nth-of-type(2) {
+    background: black;
+    background: var(--circle-bg-color);
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 16s;
+    
+}
+
+.circles li:nth-of-type(3) {
+    background: black;
+    background: var(--maincircle-bg-color);
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 17s;
+
+
+}
+
+.circles li:nth-of-type(4) {
+    background: black;
+    background: var(--circle-bg-color);
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 18s;
+
+    
+}
+
+.circles li:nth-of-type(5) {
+    background: black;
+    background: var(--circle-bg-color);
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 19s;
+
+}
+
+.text {
+    color: white;
+    position: relative;
+    font-size: 1.3em;
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 14s;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.info {
+    grid-area: info;
+
+}
+
+.info ul{
+    background-color: var(--secondary-bg-color);
+    list-style: none;
+    margin-top: -20%;
+    margin-right: 50%;
+    font-size: 0.75em;
+    margin-left: 0;
+    padding: 0;
+    width: 60%;
+    color: white;
+    border-radius: 0 2em 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slide-in 2s forwards; 
+   
+
+
+}
+
+.logo {
+    grid-area: logo;
+
+}
