@@ -7,7 +7,7 @@
    viewBox="0 0 207.77236 207.7713"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="graf-hel-halvcrikel.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -32,24 +32,25 @@
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-intersection-paths="true"
      inkscape:object-paths="true"
-     inkscape:snap-bbox="true"
+     inkscape:snap-bbox="false"
      inkscape:bbox-nodes="true"
      inkscape:bbox-paths="true"
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:zoom="0.70757982"
-     inkscape:cx="824.64195"
-     inkscape:cy="745.49893"
+     inkscape:cx="317.27869"
+     inkscape:cy="172.41871"
      inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="1341"
-     inkscape:window-y="145"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="315"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:snap-nodes="true" />
   <defs
      id="defs2">
     <linearGradient
@@ -121,7 +122,7 @@
     </g>
     <g
        id="g3533"
-       transform="translate(-103.88668,0.08431876)">
+       transform="translate(-104.22259,-4.7827805)">
       <rect
          style="fill:#000000;fill-opacity:1;stroke-width:0.361387"
          id="rect1954"

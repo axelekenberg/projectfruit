@@ -13,7 +13,7 @@ body {
     --main-bg-color: rgb(20, 18, 18);
     --secondary-bg-color: rgb(58, 57, 57);
     --circle-bg-color: radial-gradient(circle at 100px 100px, #5cabff, #000);
-    --maincircle-bg-color: radial-gradient(circle at 100px 100px, #00cc99, #000);
+    --maincircle-bg-color: radial-gradient(circle at 100px 100px, #FF5F1F, #000);
     
     
 }
@@ -43,10 +43,9 @@ body {
 
 }
 .graph ul{
-    list-style: none;
     margin-top: -6em;
     padding: 0;
-    margin-left: 1em;
+    margin-left: 5em;
 
 }
 
@@ -56,24 +55,26 @@ body {
     padding-bottom: 1em;
     opacity: 0;
     animation: fadein 3s forwards linear;
+    
 }
 .graph ul li:nth-of-type(1){
     animation-delay: 6s;
-    color: #ba2c73;
+    list-style-image: url(blixt.svg);
+
 
 }
 
 .graph ul li:nth-of-type(2){
-    color: white;
     animation-delay: 8s;
-    color:#5aa9e6;
+    list-style-image: url(truck.svg);
+    margin-bottom: -1.2em;
 
 }
 
 .graph ul li:nth-of-type(3){
-    color: white;
     animation-delay: 10s;
-    color: #072ac8;
+    list-style-image: url(factory.svg);
+
 
 }
 
@@ -130,52 +131,40 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
-    
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    background: black;
 }
 
 .circles li:nth-of-type(1) {
-    background: black;
     background: var(--circle-bg-color);  
-    opacity: 0;
-    animation: fadein 3s forwards linear;
     animation-delay: 15s;
 
 }
 
 .circles li:nth-of-type(2) {
-    background: black;
     background: var(--circle-bg-color);
-    opacity: 0;
-    animation: fadein 3s forwards linear;
     animation-delay: 16s;
     
 }
 
 .circles li:nth-of-type(3) {
-    background: black;
     background: var(--maincircle-bg-color);
-    opacity: 0;
-    animation: fadein 3s forwards linear;
     animation-delay: 17s;
 
 
 }
 
 .circles li:nth-of-type(4) {
-    background: black;
     background: var(--circle-bg-color);
-    opacity: 0;
-    animation: fadein 3s forwards linear;
+   
     animation-delay: 18s;
 
     
 }
 
 .circles li:nth-of-type(5) {
-    background: black;
     background: var(--circle-bg-color);
-    opacity: 0;
-    animation: fadein 3s forwards linear;
     animation-delay: 19s;
 
 }
@@ -221,5 +210,6 @@ body {
 
 .logo {
     grid-area: logo;
+    
 
 }
