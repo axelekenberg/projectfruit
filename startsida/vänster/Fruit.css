@@ -44,7 +44,8 @@ body {
 .graph ul{
     margin-top: -6em;
     padding: 0;
-    margin-left: 15em;
+    margin-left: 20em;
+    direction: ltr;
 
 }
 
@@ -116,7 +117,7 @@ body {
 	background: var(--bubble-bg-color);
 	transform: rotate(45deg);
 	border-radius: 0 0 1vw 0;
-    margin-left: 10vw;
+    margin-left: 35vw;
     margin-top: -2vh;
 	left: calc(0.5vw - 10vw);
 }
@@ -147,7 +148,7 @@ body {
 	background: var(--bubble-bg-color);
 	transform: rotate(45deg);
 	border-radius: 0 0 1vw 0;
-    margin-left: 10vw;
+    margin-left: 35vw;
     margin-top: -2vh;
     clip-path: inset(7% 0 0 7%);
 	left: calc(0.5vw - 10vw);
