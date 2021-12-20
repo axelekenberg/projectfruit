@@ -54,7 +54,7 @@ body {
     color: white;
     font-size: 1.5em;
     padding-bottom: 1em;
-    opacity: 1;
+    opacity: 0;
     animation: fadein 3s forwards linear;
     
 }
@@ -136,7 +136,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
-    opacity: 1;
+    opacity: 0;
     animation: fadein 3s forwards linear;
     background: black;
 }
@@ -154,14 +154,14 @@ body {
 }
 
 .circles li:nth-of-type(3) {
-    background: var(--maincircle-bg-color);
+    background: var(--circle-bg-color);
     animation-delay: 17s;
 
 
 }
 
 .circles li:nth-of-type(4) {
-    background: var(--circle-bg-color);
+    background: var(--maincircle-bg-color);
    
     animation-delay: 18s;
 
@@ -178,7 +178,7 @@ body {
     color: white;
     position: relative;
     font-size: 1.3em;
-    opacity: 1;
+    opacity: 0;
     animation: fadein 3s forwards linear;
     animation-delay: 14s;
     display: flex;
