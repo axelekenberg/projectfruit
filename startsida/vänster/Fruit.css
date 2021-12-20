@@ -1,0 +1,219 @@
+body {
+    overflow: hidden;
+    background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-areas: 
+            "starttext graph"
+            "logo info";
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+}
+
+:root {
+    --main-bg-color: rgb(20, 18, 18);
+    --secondary-bg-color: rgb(58, 57, 57);
+    --bubble-bg-color: #203354;
+}
+
+.graph {
+    grid-area: graph;
+    
+    width: 50vw;
+}
+
+
+.container {
+    height: 75vh;
+
+}
+
+.graph .container{
+    height: 100%;
+}
+
+.graph svg {
+    /*opacity: 0%;*/
+    height: 100%;
+    width: 200%;
+    aspect-ratio: 1;
+    margin-bottom: 10%;
+    transform: rotate(360deg) translateX(5%);
+}
+
+.graph ul{
+    margin-top: -6em;
+    padding: 0;
+    margin-left: 15em;
+
+}
+
+.graph ul li{
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+}
+.graph ul li:nth-of-type(1){
+    animation-delay: 6s;
+    list-style-image: url(blixt.svg);
+}
+
+.graph ul li:nth-of-type(2){
+    animation-delay: 8s;
+    list-style-image: url(truck.svg);
+    margin-bottom: -1.2em;
+}
+
+.graph ul li:nth-of-type(3){
+    animation-delay: 10s;
+    list-style-image: url(factory.svg);
+}
+
+#g18  {
+    animation: rotate1 3s linear forwards;
+    animation-delay: 4s;
+    transform-origin: 50.2% 64.1%;
+
+}
+
+#g1016 {
+    animation: rotate2 3s linear forwards;
+    animation-delay: 7s;
+    transform-origin: 50.2% 64.1%;
+}
+
+#g1203 {
+    animation: rotate3 3s linear forwards;
+    animation-delay: 10s;
+    transform-origin: 50.2% 64.1%;
+}
+
+#g3533 {
+    display: none;
+}
+
+.bubbleobj {
+    animation: fadein 5s forwards;
+}
+
+.bubble {
+    grid-area: starttext;
+	height: 25vh;
+	width: 45vw;
+    margin-left: 3vw;
+    margin-top: 25vh;
+	background: var(--bubble-bg-color);
+	display: flex;
+	border-radius: 1vh;
+}
+
+.pointer {
+    grid-area: starttext;
+	height: 6vw;
+	width: 6vw;
+	background: var(--bubble-bg-color);
+	transform: rotate(45deg);
+	border-radius: 0 0 1vw 0;
+    margin-left: 10vw;
+    margin-top: -2vh;
+	left: calc(0.5vw - 10vw);
+}
+
+.bubble2 {
+    grid-area: logo;
+	height: 5vh;
+	width: 45vw;
+	background: var(--bubble-bg-color);
+	display: flex;
+    margin-left: 3vw;
+    margin-top: 11vh;
+	border-radius: 1vh;
+}
+
+.bubble2 h2 {
+    grid-area: logo;
+    width: 45vw;
+    color: burlywood;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.pointer2 {
+    grid-area: logo;
+	height: 6vw;
+	width: 6vw;
+	background: var(--bubble-bg-color);
+	transform: rotate(45deg);
+	border-radius: 0 0 1vw 0;
+    margin-left: 10vw;
+    margin-top: -2vh;
+    clip-path: inset(7% 0 0 7%);
+	left: calc(0.5vw - 10vw);
+}
+
+.start-text {
+    grid-area: starttext;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.start-text h2 {
+    width: 45vw;
+    color: burlywood;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.start-text p{
+    width: 45vw;
+    color: aliceblue;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+
+.text {
+    color: white;
+    position: relative;
+    font-size: 1.3em;
+    opacity: 0;
+    animation: fadein 3s forwards linear;
+    animation-delay: 9s;
+    display: flex;
+    justify-content: center;
+}
+
+
+.info {
+    grid-area: info;
+
+}
+
+.info ul{
+    background-color: var(--secondary-bg-color);
+    box-shadow: 5px 10px 40px rgb(63, 62, 62);
+    list-style: none;
+    margin-top: 35%;
+    margin-left: 38.5%;
+    font-size: 0.75em;
+    margin-right: 0;
+    padding: 0;
+    width: 60%;
+    color: white;
+    border-radius: 2em 0 0 2em;
+    border: 3px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slide-in 2s forwards; 
+}
+
+.logo {
+    grid-area: logo;
+
+}
