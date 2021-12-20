@@ -45,8 +45,8 @@ body {
 .graph ul{
     margin-top: -6em;
     padding: 0;
-    margin-left: 26vw;
-    
+    margin-right: 7.5vw;
+    direction: rtl;
 
 }
 
