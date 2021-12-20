@@ -141,7 +141,7 @@ body {
 }
 
 .circles li:nth-of-type(1) {
-    background: var(--circle-bg-color);  
+    background: var(--maincircle-bg-color);  
     animation-delay: 15s;
 
 }
@@ -153,7 +153,7 @@ body {
 }
 
 .circles li:nth-of-type(3) {
-    background: var(--maincircle-bg-color);
+    background: var(--circle-bg-color);
     animation-delay: 17s;
 
 
